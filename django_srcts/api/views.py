@@ -18,7 +18,7 @@ def list_srcts( request ):
             'title': app.title,
             'desc':  app.desc,
             'url':   app.url,
-            #'image': app.image,
+            'image': app.image.url,
         }
         app_id = app_id + 1
 
