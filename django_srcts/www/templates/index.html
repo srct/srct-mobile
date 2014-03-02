@@ -20,13 +20,25 @@ SRCT Mobile Applications
   the ground with SRCT sponsorship.</p>
 </div>
 <div class="two-third column">
-  <h3>Three Core Principles</h3>
-  <p>Skeleton is built on three core principles:</p>
-  <ul class="square">
-    <li><strong>A Responsive Grid Down To Mobile</strong>: Elegant scaling from a browser to tablets to mobile.</li>
-    <li><strong>Fast to Start</strong>: It's a tool for rapid development with best practices</li>
-    <li><strong>Style Agnostic</strong>: It provides the most basic, beautiful styles, but is meant to be overwritten.</li>
-  </ul>
+  <div id="owl-screenshots" class="owl-carousel owl-theme">
+    <div class="item"> <img src="/media/screenshots/one.png" /> </div>
+    <div class="item"> <img src="/media/screenshots/one.png" /> </div>
+    <div class="item"> <img src="/media/screenshots/one.png" /> </div>
+    <div class="item"> <img src="/media/screenshots/one.png" /> </div>
+  </div>
 </div>
+
+<script>
+$(document).ready(function() {
+  $("#owl-screenshots").owlCarousel({
+
+    autoPlay: 3000,
+    items: 4,
+    itemsDesktop: [1199, 3],
+    itemsDesktopSmall: [979, 3]
+
+  });
+});
+</script>
 
 {% endblock %}
