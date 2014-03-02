@@ -8,13 +8,13 @@ def list_srcts( request ):
     if request.method != 'GET':
         return redirect('/api')
 
-    response_data = []
-    response_data.append( {
+    response_data = {}
+    response_data['0'] = {
         'title': 'WhatsOpen',
         'url':   'http://whatsopen.gmu.edu',
         'desc':  """What's Open is a dynamic web application that lets you easily find out which on-campus locations are currently available. It's a simple alternative to searching for campus hours and filtering though them to figure out which ones are open.""",
         'img':   'http://whatsopen.gmu.edu/image.png',
-    } )
+    }
 
     return HttpResponse(
         response_data,
