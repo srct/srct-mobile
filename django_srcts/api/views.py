@@ -17,7 +17,7 @@ def list_srcts( request ):
     }
 
     return HttpResponse(
-        response_data,
+        json.dumps(response_data),
         content_type="application/json"
     )
 
