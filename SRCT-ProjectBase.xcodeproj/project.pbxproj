@@ -19,6 +19,14 @@
 		60DC0CF818C2B86D0093B383 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DC0CE018C2B86C0093B383 /* UIKit.framework */; };
 		60DC0D0018C2B86D0093B383 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60DC0CFE18C2B86D0093B383 /* InfoPlist.strings */; };
 		60DC0D0218C2B86D0093B383 /* SRCT_ProjectBaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0D0118C2B86D0093B383 /* SRCT_ProjectBaseTests.m */; };
+		60DC0D0F18C2BB130093B383 /* projectLinkButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0D0E18C2BB130093B383 /* projectLinkButton.m */; };
+		60DC0D1018C2BB130093B383 /* projectLinkButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0D0E18C2BB130093B383 /* projectLinkButton.m */; };
+		60DC0D1318C2BC620093B383 /* srct_sticker.png in Resources */ = {isa = PBXBuildFile; fileRef = 60DC0D1218C2BC620093B383 /* srct_sticker.png */; };
+		60DC0D1418C2BC620093B383 /* srct_sticker.png in Resources */ = {isa = PBXBuildFile; fileRef = 60DC0D1218C2BC620093B383 /* srct_sticker.png */; };
+		60DC0D1718C2BD310093B383 /* mainControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0D1618C2BD310093B383 /* mainControllerViewController.m */; };
+		60DC0D1818C2BD310093B383 /* mainControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0D1618C2BD310093B383 /* mainControllerViewController.m */; };
+		60DC0D2618C2C2D30093B383 /* smallerProjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0D2518C2C2D30093B383 /* smallerProjects.m */; };
+		60DC0D2718C2C2D30093B383 /* smallerProjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0D2518C2C2D30093B383 /* smallerProjects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +56,13 @@
 		60DC0CFD18C2B86D0093B383 /* SRCT-ProjectBaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SRCT-ProjectBaseTests-Info.plist"; sourceTree = "<group>"; };
 		60DC0CFF18C2B86D0093B383 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		60DC0D0118C2B86D0093B383 /* SRCT_ProjectBaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRCT_ProjectBaseTests.m; sourceTree = "<group>"; };
+		60DC0D0D18C2BB130093B383 /* projectLinkButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = projectLinkButton.h; path = Views/projectLinkButton.h; sourceTree = "<group>"; };
+		60DC0D0E18C2BB130093B383 /* projectLinkButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = projectLinkButton.m; path = Views/projectLinkButton.m; sourceTree = "<group>"; };
+		60DC0D1218C2BC620093B383 /* srct_sticker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = srct_sticker.png; sourceTree = "<group>"; };
+		60DC0D1518C2BD310093B383 /* mainControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mainControllerViewController.h; path = Controllers/mainControllerViewController.h; sourceTree = "<group>"; };
+		60DC0D1618C2BD310093B383 /* mainControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = mainControllerViewController.m; path = Controllers/mainControllerViewController.m; sourceTree = "<group>"; };
+		60DC0D2418C2C2D30093B383 /* smallerProjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = smallerProjects.h; path = Controllers/smallerProjects.h; sourceTree = "<group>"; };
+		60DC0D2518C2C2D30093B383 /* smallerProjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = smallerProjects.m; path = Controllers/smallerProjects.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +122,8 @@
 		60DC0CE218C2B86C0093B383 /* SRCT-ProjectBase */ = {
 			isa = PBXGroup;
 			children = (
+				60DC0D0C18C2BAA80093B383 /* Views */,
+				60DC0D0B18C2BAA10093B383 /* Controllers */,
 				60DC0CEB18C2B86C0093B383 /* AppDelegate.h */,
 				60DC0CEC18C2B86C0093B383 /* AppDelegate.m */,
 				60DC0CEE18C2B86C0093B383 /* Images.xcassets */,
@@ -142,6 +159,35 @@
 				60DC0CFE18C2B86D0093B383 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60DC0D0B18C2BAA10093B383 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				60DC0D1518C2BD310093B383 /* mainControllerViewController.h */,
+				60DC0D1618C2BD310093B383 /* mainControllerViewController.m */,
+				60DC0D2418C2C2D30093B383 /* smallerProjects.h */,
+				60DC0D2518C2C2D30093B383 /* smallerProjects.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		60DC0D0C18C2BAA80093B383 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				60DC0D1118C2BC1B0093B383 /* Images */,
+				60DC0D0D18C2BB130093B383 /* projectLinkButton.h */,
+				60DC0D0E18C2BB130093B383 /* projectLinkButton.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		60DC0D1118C2BC1B0093B383 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				60DC0D1218C2BC620093B383 /* srct_sticker.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60DC0CE718C2B86C0093B383 /* InfoPlist.strings in Resources */,
+				60DC0D1318C2BC620093B383 /* srct_sticker.png in Resources */,
 				60DC0CEF18C2B86C0093B383 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60DC0D0018C2B86D0093B383 /* InfoPlist.strings in Resources */,
+				60DC0D1418C2BC620093B383 /* srct_sticker.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60DC0D2618C2C2D30093B383 /* smallerProjects.m in Sources */,
+				60DC0D0F18C2BB130093B383 /* projectLinkButton.m in Sources */,
+				60DC0D1718C2BD310093B383 /* mainControllerViewController.m in Sources */,
 				60DC0CED18C2B86C0093B383 /* AppDelegate.m in Sources */,
 				60DC0CE918C2B86C0093B383 /* main.m in Sources */,
 			);
@@ -249,6 +300,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				60DC0D0218C2B86D0093B383 /* SRCT_ProjectBaseTests.m in Sources */,
+				60DC0D1818C2BD310093B383 /* mainControllerViewController.m in Sources */,
+				60DC0D2718C2C2D30093B383 /* smallerProjects.m in Sources */,
+				60DC0D1018C2BB130093B383 /* projectLinkButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +418,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SRCT-ProjectBase/SRCT-ProjectBase-Prefix.pch";
 				INFOPLIST_FILE = "SRCT-ProjectBase/SRCT-ProjectBase-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -377,6 +432,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SRCT-ProjectBase/SRCT-ProjectBase-Prefix.pch";
 				INFOPLIST_FILE = "SRCT-ProjectBase/SRCT-ProjectBase-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
