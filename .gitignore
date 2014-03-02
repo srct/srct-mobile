@@ -3,3 +3,4 @@
 .virtualenv
 secret.py
 db.sqlite3
+django_srcts/static/admin
