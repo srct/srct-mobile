@@ -1,5 +1,5 @@
 """
-Django settings for www project.
+Django settings for django_srcts project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'r&9$8ne17afalo@rre4g$a^k+2^a$yyj*(eg1d@j%=p(y59rt1'
+SECRET_KEY = 'vby#(@w7$j8ndrkkscpp1pizkp5)j7k)hxpr3qt+a_gu99_(l1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -47,9 +47,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'www.urls'
+ROOT_URLCONF = 'django_srcts.urls'
 
-WSGI_APPLICATION = 'www.wsgi.application'
+WSGI_APPLICATION = 'django_srcts.wsgi.application'
 
 
 # Database
