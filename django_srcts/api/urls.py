@@ -5,6 +5,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('api.views',
 
+    url(r'^$', 'api', name = 'api'),
     url(r'^list$', 'list_srcts', name = 'list_srcts'),
 
 )
