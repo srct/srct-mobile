@@ -1,6 +1,7 @@
 from django.shortcuts import render, render_to_response
 from django.shortcuts import get_object_or_404, redirect
 from django.http import HttpResponse
+from api.models import App
 import json
 
 # Create your views here.
@@ -9,12 +10,17 @@ def list_srcts( request ):
         return redirect('/api')
 
     response_data = {}
-    response_data['0'] = {
-        'title': 'WhatsOpen',
-        'url':   'http://whatsopen.gmu.edu',
-        'desc':  """What's Open is a dynamic web application that lets you easily find out which on-campus locations are currently available. It's a simple alternative to searching for campus hours and filtering though them to figure out which ones are open.""",
-        'img':   'http://whatsopen.gmu.edu/image.png',
-    }
+
+    apps = App.objects.all()
+    app_id = 0
+    for app in apps:
+        response_data[str(app_id)] = {
+            'title': app.title,
+            'desc':  app.desc,
+            'url':   app.url,
+            #'image': app.image,
+        }
+        app_id = app_id + 1
 
     return HttpResponse(
         json.dumps(response_data),
