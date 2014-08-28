@@ -1,3 +1,8 @@
+# Build directories.
+srct-mobile/platforms
+
+
+
 # Logs
 logs
 *.log
